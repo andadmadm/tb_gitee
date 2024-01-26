@@ -1,6 +1,9 @@
 name: Sync_6dylan6
 
 on:
+  push:
+    branches: 
+      - jdpro
   workflow_dispatch:
   schedule:  
     - cron: '10 */10 * * *'
