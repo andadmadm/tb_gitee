@@ -1,7 +1,6 @@
 name: Sync_6dylan6
 
 on:
-  push:
   workflow_dispatch:
   schedule:  
     - cron: '10 */10 * * *'
