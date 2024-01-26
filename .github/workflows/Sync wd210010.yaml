@@ -1,7 +1,6 @@
 name: Sync_wd210010
 
 on:
-  push:
   workflow_dispatch:
   schedule:  
     - cron: '54 23 */12 * *'
