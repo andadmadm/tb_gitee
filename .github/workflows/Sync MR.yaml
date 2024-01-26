@@ -1,7 +1,6 @@
 name: Sync_MR
 
 on:
-  push:
   workflow_dispatch:
   schedule:  
     - cron: '20 1 */9 * *'
