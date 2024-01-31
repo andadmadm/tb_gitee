@@ -3,7 +3,7 @@ name: Sync_wd210010
 on:
   workflow_dispatch:
   schedule:  
-    - cron: '54 23 */12 * *'
+    - cron: '40 23 */12 * *'
 
 jobs:
   build:
