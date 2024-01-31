@@ -3,7 +3,7 @@ name: Sync_faker3
 on:
   workflow_dispatch:
   schedule:  
-    - cron: '59 */11 * * *'
+    - cron: '50 23 * * *'
 
 jobs:
   build:
