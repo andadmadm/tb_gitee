@@ -1,8 +1,11 @@
 name: Sync_faker3
 
 on:
+  push:
+    branches: 
+      - faker3
   workflow_dispatch:
-  schedule:  
+  schedule: 
     - cron: '50 23 * * *'
 
 jobs:
