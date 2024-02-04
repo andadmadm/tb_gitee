@@ -1,8 +1,11 @@
 name: Sync_wd210010
 
 on:
+  push:
+    branches: 
+      - only_for_happly
   workflow_dispatch:
-  schedule:  
+  schedule: 
     - cron: '40 23 */12 * *'
 
 jobs:
