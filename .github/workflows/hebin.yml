@@ -1,4 +1,4 @@
-name: Download and Merge Files
+name: hebin
 
 on:
   workflow_dispatch:
@@ -32,10 +32,3 @@ jobs:
           git add white-list.txt
           git commit -m "Auto-merge files"
           git push
-
-
-AI 搜索
-
-解释
-
-翻译
