@@ -1,4 +1,4 @@
-name: hebin
+name: Download and Merge Files
 
 on:
   workflow_dispatch:
