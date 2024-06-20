@@ -1,0 +1,41 @@
+name: hebin
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '12 12 * * *'
+
+jobs:
+  merge-files:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      
+      - name: Download files
+        run: |
+          curl -sLJO https://github.com/entr0pia/SwitchyOmega-Whitelist/raw/master/white-list.sorl
+          curl -sLJO https://github.com/mayaxcn/china-ip-list/raw/master/chnroute.txt
+      
+      - name: Merge files
+        run: |
+          cat white-list.sorl chnroute.txt > merged_file.txt
+          echo "Files merged successfully."
+      
+      - name: Move merged file
+        run: mv merged_file.txt white-list.txt
+      
+      - name: Commit and push changes
+        run: |
+          git config --global user.email andadmadm@yandex.com
+          git config --global user.name andadmadm
+          git add white-list.txt
+          git commit -m "Auto-merge files"
+          git push
+
+
+AI 搜索
+
+解释
+
+翻译
