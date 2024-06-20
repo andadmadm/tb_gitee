@@ -31,4 +31,4 @@ jobs:
           git config --global user.name andadmadm
           git add white-list.txt
           git commit -m "Auto-merge files"
-          git push
+          git push origin main
